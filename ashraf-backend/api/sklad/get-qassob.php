@@ -1,0 +1,48 @@
+<?php	
+	include_once '../header.php';
+
+	include_once '../config.php';
+
+	$asli = new Cyber();
+	$ret = [];
+
+	$asli->allow_method = ['GET'];
+	$asli->allow_rolls = ['sklad','admin','saqlash','sotuv'];
+
+	$asli->check_ip();
+
+	$asli->check_method();
+
+
+	$asli->check_rolls();
+
+	$data = file_get_contents("php://input");
+	$data = json_decode($data);
+
+	if(isset($_GET['id'])){
+		$method = $asli->get_method();
+		if($method=="DELETE"){
+			$sql = $asli->delete('qassoblar',['id'=>$_GET['id']]);
+			if($sql){
+				$asli->resp += ['success'=> true, 'message' => "Muvaffiqqiyatli o'chirildi"];
+			}
+			else{
+				$asli->resp += ['success'=> false, 'message' => "Xatolik malumot o'chirilmadi!"];
+			}
+		}
+		if($method=="GET"){
+			$asli->resp += ['success'=> true, 'message' => "Muvaffiqqiyatli"];
+			$qassob = $asli->getdata('qassoblar',['id'=>$_GET['id']]);
+			$asli->resp['data'] = $qassob;
+		}
+	}
+	else{
+		$asli->resp += ['success'=> true, 'message' => "Muvaffiqqiyatli"];
+		$qassoblar = $asli->getdatas('qassoblar',['status'=>'active']);
+		foreach ($qassoblar as $key => $qassob) {
+			$qassoblar[$key]['fio'] = $asli->defilter($qassob['fio']);
+		}
+		$asli->resp['data'] = $qassoblar;
+	}
+	$asli->print_json();
+?>

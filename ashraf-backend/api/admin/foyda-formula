@@ -1,0 +1,7 @@
+K = Ko'chadagi qarzlar debitor balans
+P = Balansdagi aktiv balans
+O = Skladdagi qoldiq balans
+D = Divedend balans
+Q = Taminotchilardan olingan qarzlar
+H = Harajatlar
+F = K + P + O + D - Q - H

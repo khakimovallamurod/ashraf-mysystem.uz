@@ -1,0 +1,29 @@
+<?php	
+	include_once '../header.php';
+
+	include_once '../config.php';
+
+	$asli = new Cyber();
+	$ret = [];
+
+	$asli->allow_method = ['GET'];
+	$asli->allow_rolls = ['sklad','admin','saqlash'];
+
+	$asli->check_ip();
+
+	$asli->check_method();
+
+
+	$asli->check_rolls();
+
+	$n = $asli->countustun('krimproducts','id',['status'=>'new']);
+	$ret = [];
+	if($n!=0){
+		$asli->resp += ['success'=> true, 'message' => "Sizda $n ta krim qilish bo'limidan yuk qabul qilishingiz uchun so'rov bor!", 'n' => $n];
+		$asli->resp['data'] = $n;
+	}
+	else{
+		$asli->resp += ['success'=> false, 'message' => "Kechirasiz hozirda krim qilish bo'limdan so'rov mavjud emas!"];
+	}
+	$asli->print_json();
+?>
