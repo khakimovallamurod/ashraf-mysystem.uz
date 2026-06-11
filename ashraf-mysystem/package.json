@@ -2,7 +2,6 @@
   "name": "ashraf-my-system_app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@faker-js/faker": "^8.0.2",

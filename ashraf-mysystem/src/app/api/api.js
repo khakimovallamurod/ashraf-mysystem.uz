@@ -1,6 +1,6 @@
 
 // const MAIN_API = "/shohruh-system/shohruh-system/api";
-const MAIN_API = "/ashraf-mysystem.uz/ashraf-backend/api";
+const MAIN_API = "/api";
 // https://maestro-samarkand.uz/shohruh-system/api
 /* AUTH */
 const AUTH_API = {

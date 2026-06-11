@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://miyonqol-farm.uz/shohruh-system/api/:path*"
+      "destination": "https://ashraf-mysystem.uz/ashraf-backend/api/:path*"
     }
   ]
 }
