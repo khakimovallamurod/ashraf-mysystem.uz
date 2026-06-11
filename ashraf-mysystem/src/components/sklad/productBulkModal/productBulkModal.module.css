@@ -1,0 +1,5 @@
+.formInner {
+    max-height: 70vh;
+    overflow: auto;
+    padding: 1rem 0;
+}

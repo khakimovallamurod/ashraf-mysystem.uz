@@ -1,0 +1,20 @@
+.tableItem {
+  vertical-align: text-top;
+}
+.tableItem:last-child {
+  max-width: 70px;
+  text-align: right;
+}
+
+.tableRow {
+  border-bottom: solid thin #eeee;
+}
+.tableRow td {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .tableItem:last-child {
+    width: 70%;
+  }
+}

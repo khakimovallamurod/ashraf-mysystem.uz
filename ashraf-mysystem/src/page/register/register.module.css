@@ -1,0 +1,25 @@
+.themeModeBg {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.form {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.loginFormForgot {
+  float: right;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}

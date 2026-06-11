@@ -1,0 +1,46 @@
+{
+  "cashier": {
+    "attendance": {
+      "all_history": [
+        {
+          "id": 1,
+          "name": "John",
+          "status": "kelmagan"
+        },
+        {
+          "id": 2,
+          "name": "John 2",
+          "status": "kelgan"
+        },
+        {
+          "id": 3,
+          "name": "John 3",
+          "status": "kelmagan"
+        },
+        {
+          "id": 4,
+          "name": "John 4",
+          "status": "kelmagan"
+        }
+      ],
+      "always_late": [
+        {
+          "id": 1,
+          "name": "John"
+        },
+        {
+          "id": 2,
+          "name": "John 2"
+        },
+        {
+          "id": 3,
+          "name": "John 3"
+        },
+        {
+          "id": 4,
+          "name": "John 4"
+        }
+      ]
+    }
+  }
+}

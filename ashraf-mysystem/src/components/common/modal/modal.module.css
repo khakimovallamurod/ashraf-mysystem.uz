@@ -1,0 +1,15 @@
+.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute!important;
+  top: 0;
+  right: 0;
+}

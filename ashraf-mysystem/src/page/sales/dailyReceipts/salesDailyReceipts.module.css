@@ -1,0 +1,9 @@
+.content {
+  margin: auto;
+  max-width: 500px;
+}
+
+.listItem {
+  display: flex!important;
+  justify-content: space-between!important;
+}

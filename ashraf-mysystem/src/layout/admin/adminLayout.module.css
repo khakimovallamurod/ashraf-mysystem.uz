@@ -1,0 +1,8 @@
+.layout {
+  margin-left: 80px;
+  transition: all 0.2s;
+}
+.active {
+  transition: all 0.5s;
+  margin-left: 280px;
+}

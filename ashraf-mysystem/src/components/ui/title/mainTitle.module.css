@@ -1,0 +1,28 @@
+.lgTitle,
+.smTitle,
+.mdTitle{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.lgTitle{
+  font-size: 24px;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.mdTitle{
+  font-size: 18px;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+.smTitle{
+  font-size: 16px;
+  margin: 0.6rem 0;
+  font-weight: 400;
+}
+
+.xlTitle {
+  font-size: 14px;;
+  margin: 0.4rem 0;
+  font-weight: 400;
+}

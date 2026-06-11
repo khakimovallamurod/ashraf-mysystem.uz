@@ -1,0 +1,14 @@
+.innerList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.innerList li {
+  display: flex;
+  justify-content: space-between;
+}
+.addButton {
+  width: 100%;
+}

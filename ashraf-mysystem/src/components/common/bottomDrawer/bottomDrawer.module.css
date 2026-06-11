@@ -1,0 +1,24 @@
+.drawer {
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.divider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.divider::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  background: #e0e0e0;
+  content: '';
+}

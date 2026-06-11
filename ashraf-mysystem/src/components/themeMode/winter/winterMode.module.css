@@ -1,0 +1,42 @@
+.themeModeBg {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.snowflake {
+  position: fixed;
+  z-index: 9999;
+  display: inline-block;
+  width: 0.1%;
+  color: #4dafff;
+  opacity: 0;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+  animation: fall 16s linear infinite;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */ 
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0, 97vh);
+    opacity: 0;
+  }
+}

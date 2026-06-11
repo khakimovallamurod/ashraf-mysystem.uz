@@ -1,0 +1,95 @@
+.container {
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 22px;
+  padding: 13px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #f7f7f8;
+}
+
+.card.dark {
+  background: #292929;
+}
+.card.green {
+  background: #2ec04e;
+}
+
+.cardNoCompPercent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #d975bb;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cardTitle {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.card.dark .cardTitle,
+.card.green .cardTitle {
+  color: #fff;
+}
+
+.cardPercentTitle {
+  color: #000;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.cardCaption {
+  color: #858585;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card.green .cardCaption {
+  color: #fff;
+}
+
+.cardPercent {
+  color: #d975bb;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}

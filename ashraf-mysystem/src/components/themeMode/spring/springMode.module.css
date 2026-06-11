@@ -1,0 +1,45 @@
+.bgContent {
+  width: 100vw;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bgContent {
+  animation-name: bgHeightAnim;
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+.themeModeBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.body {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes bgHeightAnim {
+  0% {
+    height: 100vh;
+  }
+  60% {
+    height: 28vh;
+  }
+  100% {
+    height: 50vh;
+  }
+}

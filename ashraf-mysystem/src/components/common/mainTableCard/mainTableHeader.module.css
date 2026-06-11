@@ -1,0 +1,79 @@
+.tableCard {
+  border-radius: 12px;
+  border: 1px solid #b0b0b0;
+  background: rgba(249, 249, 249, 0.486);
+  padding: 26px 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableCardTitle {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tableCardCaption {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* ==========Size========== */
+.tableCard.medium,
+.tableCard.small {
+  padding: 4px 8px;
+}
+.tableCard.small .tableCardTitle {
+  font-size: 14px;
+}
+.tableCard.small .tableCardCaption {
+  font-size: 11px;
+}
+/* ==========Colors========== */
+
+/* Danger */
+.tableCard.danger {
+  border: 1px solid #fc506f;
+  background: rgba(252, 80, 111, 0.19);
+}
+.tableCard.danger .tableCardTitle,
+.tableCard.danger .tableCardCaption {
+  color: #fc506f;
+}
+/* Success */
+.tableCard.success {
+  border: 1px solid #00BD4C;
+  background: rgba(0, 189, 76, 0.07);
+}
+.tableCard.success .tableCardTitle,
+.tableCard.success .tableCardCaption {
+  color: #00BD4C;
+}
+/* Brown */
+.tableCard.brown {
+  border: 1px solid #F27E13;
+  background: rgba(255, 211, 144, 0.40);
+}
+.tableCard.brown .tableCardTitle,
+.tableCard.brown .tableCardCaption {
+  color: #F27E13;
+}
+/* Blue */
+.tableCard.blue {
+  border: 1px solid #00A3FF;
+  background: #00A3FF36;
+}
+.tableCard.blue .tableCardTitle,
+.tableCard.blue .tableCardCaption {
+  color: #00A3FF;
+}

@@ -1,0 +1,31 @@
+.printContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  z-index: -1123;
+  text-align: center;
+}
+.list {
+  display: flex;
+  justify-content: center;
+}
+.listItem {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media print {
+  .body {
+    visibility: hidden;
+    height: 100vh;
+    overflow: auto;
+  }
+  .printContainer {
+    position: relative;
+    visibility: visible; 
+  }
+}

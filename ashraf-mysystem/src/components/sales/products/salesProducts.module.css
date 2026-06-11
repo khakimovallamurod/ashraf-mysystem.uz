@@ -1,0 +1,23 @@
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08),
+    0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.button {
+  width: 100%;
+  margin-top: 1rem;
+}
+.loadingCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Table */
+.disabledRow {
+  background-color: #d5fedc;
+  pointer-events: none;
+}

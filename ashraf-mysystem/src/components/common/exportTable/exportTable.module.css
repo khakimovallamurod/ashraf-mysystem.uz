@@ -1,0 +1,14 @@
+.exportTable,
+.exportTable tr,
+.exportTable th,
+.exportTable td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.exportTable {
+  width: 0;
+  height: 0;
+  position: fixed;
+  visibility: hidden;
+}

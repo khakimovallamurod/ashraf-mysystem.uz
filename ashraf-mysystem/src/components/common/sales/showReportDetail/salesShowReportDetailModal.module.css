@@ -1,0 +1,7 @@
+.headerItem {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}

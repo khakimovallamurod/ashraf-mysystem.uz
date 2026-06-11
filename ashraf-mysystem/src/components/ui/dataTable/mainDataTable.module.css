@@ -1,0 +1,22 @@
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  width: 200px;
+}
+
+@media (max-width: 720px) {
+  .tableHeader {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .searchInput {
+    width: 100%;
+  }
+}

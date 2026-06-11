@@ -1,0 +1,20 @@
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+  border: 1px solid #000;
+  height: 100%;
+}
+.card:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+}
+.button {
+  width: 100%;
+}
+.loadingCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list{
+  flex-grow: 1;
+}
